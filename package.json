@@ -1,3 +1,4 @@
+
 {
   "name": "Bwmxmd",
   "version": "2.1.0",
@@ -5,8 +6,7 @@
   "main": "index.js",
   "type": "commonjs",
   "engines": {
-    "node": "20.19.2",
-    "npm": "10.8.2"
+    "node": "20.x"
   },
   "scripts": {
     "start": "node index.js",
@@ -15,7 +15,8 @@
     "c": "tsc",
     "pm2-start": "pm2 start index.js --attach",
     "xmd": "pm2 start index.js --attach"
-  },
+  
+},
   "keywords": [
     "bot",
     "Baileys",
@@ -27,9 +28,10 @@
   "author": "Ibrahim Adams",
   "license": "ISC",
   "dependencies": {
-    "@adiwajshing/keyed-db": "^0.2.4",
-    "@hapi/boom": "^10.0.1",
+    "@adiwajshing/keyed-db": "^0.2.4",        
+    "@hapi/boom": "^10.0.1",   
     "@types/node": "^18.0.6",
+    "@octokit/rest": "^22.0.0",
     "@whiskeysockets/baileys": "npm:baileys@6.7.18",
     "acrcloud": "^1.4.0",
     "adm-zip": "^0.5.16",
@@ -42,8 +44,7 @@
     "canvacord": "^5.4.8",
     "chalk": "^5.3.0",
     "cfonts": "^3.2.0",
-    "cheerio": "0.22.0",
-    "css-select": "5.1.0",
+    "cheerio": "^1.0.0-rc.12",
     "child_process": "^1.0.2",
     "chess.js": "*",
     "cloudinary": "^2.6.1",
@@ -127,7 +128,7 @@
     "translatte": "^3.0.1",
     "translate-google-api": "^1.0.4",
     "typescript": "^5.1.6",
-    "undici": "^6.19.4",
+    "undici": "^6.19.4",   
     "url": "^0.11.4",
     "url-regex-safe": "^3.0.0",
     "uuid": "^9.0.1",
